@@ -1,0 +1,392 @@
+* {
+  margin: 0;
+  padding: 0;
+  animation: fadeInAnimation ease-in 1.2s;
+
+  box-sizing: border-box;
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+/* PRELOADER */
+#preloader{
+  background: #000 url("Images/loader.gif") no-repeat center center;
+  background-size: 15%;
+  height:100vh;
+  width:100%;
+  position:fixed;
+  z-index:100;
+}
+
+
+
+/* NAVBAR */
+.navbar {
+  font-weight: 300;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.5rem;
+  font-family: "ubuntu";
+}
+
+nav a img {
+  width: 50px;
+  margin: 0px 5px 0px 5px;
+  padding: 0px;
+}
+
+.donatebtn {
+  margin: 45px 0;
+}
+/* TOP SECTION */
+#top-section {
+  background-image: url("Images/main-pic.jpg");
+  background-color: rgba(255, 255, 255, 0.137);
+  /* background-blend-mode: lighten; */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  color: white;
+
+  text-align: left;
+}
+.top-content p {
+  font-family: "Ubuntu";
+  font-size: 3rem;
+  margin: 0;
+  color: aqua;
+  font-size: xx-large;
+}
+.top-content {
+  padding: 10%;
+}
+.top-content h1 {
+  font-size: 5rem;
+  font-family: "ubuntu";
+  font-weight: 500;
+  margin: 2px;
+  letter-spacing: 1.5px;
+  margin-top: 0;
+}
+.top-content h4 {
+  letter-spacing: 4px;
+  word-spacing: 7px;
+  font-size: 2.3rem;
+}
+
+@media (max-width: 800px) {
+  .donatebtn {
+    margin: 15px 0;
+  }
+  nav a img {
+    width: 28px;
+    margin-right: 10px;
+  }
+
+  .top-content {
+    padding: 17% 3%;
+    text-align: left;
+  }
+  #top-section {
+    background-attachment: local;
+    background-size: 100%;
+  }
+  .top-content h1 {
+    font-size: 2.2rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+  .top-content p {
+    font-size: 1.2rem;
+  }
+  .top-content h4 {
+    font-size: 1.4rem;
+    letter-spacing: normal;
+    word-spacing: normal;
+  }
+  .navbar-brand {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  .top-content .btn {
+    font-size: 1rem;
+    padding: 4px;
+  }
+  .nav-item {
+    font-size: 1rem;
+  }
+}
+
+/* SERVICES SECTION  */
+#services {
+  text-align: center;
+  padding: 3% 0;
+  /* opacity: 0; */
+  /* animation: fadeInAnimation ease-in 2.4s;  */
+}
+
+.services-content p {
+  padding: 20px;
+}
+
+.services-content .hr {
+  width: 10%;
+  height: 0;
+  border-width: 0;
+  text-align: center;
+  border: 0.2px solid rgba(255, 0, 0, 0.705);
+}
+.hr1 {
+  width: 4%;
+  border: 0.2px solid rgba(255, 0, 0, 0.705);
+}
+
+.hr2 {
+  display: none;
+  visibility: hidden;
+}
+
+.services-content .fas {
+  margin: 10px;
+}
+.box {
+  /* width:30%; */
+  padding: 20px;
+}
+
+/* IF U NEED ANY BOX BACKGROUND U CAN USE THIS */
+/* .box1{
+    margin:5px;
+    background-color: aqua;
+    box-shadow:3px 3px 4px black;
+} */
+
+@media (max-width: 800px) {
+  #services {
+    text-align: center;
+    padding: 2% 0;
+    /* margin:0; */
+  }
+  .services-content p {
+    padding: 10px;
+  }
+
+  .hr2 {
+    display: block;
+    width: 80%;
+    visibility: visible;
+    border-color: grey;
+  }
+  .fas {
+    margin-top: 2px;
+    padding-top: 2px;
+  }
+
+  #services .row {
+    /* width:30%; */
+    padding: 0px;
+    margin: 0;
+  }
+}
+
+
+#contact-us {
+  animation: fadeInAnimation ease-in 2.7s;
+  opacity: 0;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  padding: 5%;
+  margin-top:60px;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#contact-us img {
+  width: 83%;
+  animation-name: pic-enlarge;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+  animation-direction: linear;
+}
+@keyframes pic-enlarge {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#contact-us .row {
+  /* width:30%; */
+  padding: 20px;
+  margin: 0;
+}
+
+label,
+.fontchange {
+  /* padding-top:10px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-weight: 500; */
+  font-family: "montserrat";
+}
+
+@media (max-width: 800px) {
+  #contact-us {
+    padding: 3%;
+  }
+  form {
+    margin-top: 25px;
+  }
+  #contact-us .row {
+    /* width:30%; */
+    padding: 10px;
+    margin: 0;
+  }
+}
+
+/* FOOTER SECTION  */
+#footer {
+  padding: 4% 5%;
+  background-color: #272532;
+  color: white;
+  margin-top: 50px;
+}
+.after-logo,
+.quickLinks a,
+.contact p {
+  color: grey;
+}
+#footer .social-handles a i {
+  padding: 10px;
+  margin-top: 10px;
+  color: #2196f3;
+  overflow: hidden;
+  /* transition: 0.1s; */
+}
+#footer .social-handles a i:hover {
+  color: white;
+  background-color: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 20px #2196f3, 0 0 40px #2196f3;
+  border-radius: 50%;
+  transition-delay: 0.05s;
+}
+
+#footer img {
+  width: 20%;
+  margin: 15px;
+}
+
+.quickLinks,
+.contact,
+.subscription {
+  padding: 30px;
+  margin-top: 35px;
+}
+.contact-fa {
+  padding: 5px;
+  margin: 3px;
+  color: #2196f3;
+}
+.social-handles2 {
+  display: none;
+}
+
+#footer .row {
+  margin: 0;
+}
+/* REMOVING SOCIAL HANDLES 2 FROM BELOW AND ADDING IT TO MEDIA QUERY */
+@media (max-width: 800px) {
+  #footer {
+    padding: 2.5% 3%;
+    text-align: left;
+  }
+
+  .quickLinks,
+  .contact,
+  .subscription {
+    padding: 10px;
+    margin-top: 10px;
+  }
+
+  .social-handles {
+    display: none;
+  }
+  .social-handles2 {
+    display: block;
+    text-align: center;
+  }
+
+  #footer .social-handles2 a i {
+    padding: 15px;
+    margin-top: 24px;
+    color: #2196f3;
+  }
+
+  #footer .social-handles2 a i:hover {
+    color: white;
+    background-color: #2196f3;
+    border-radius: 50%;
+  }
+  #footer img {
+    width: 14%;
+    margin: 15px;
+  }
+}
+
+/* <!-- ________Carousel______________________________________________________________________________________________________________________ --> */
+
+#carousel-section {
+  padding: 6% 16% 16% 16%;
+  background-color: #0b0b0b;
+  background-attachment: fixed;
+}
+#carousel-section h2 {
+  padding: 20px;
+  color: white;
+  margin-top: 0;
+}
+
+#carousel-section .slide-image {
+  width: 90%;
+  /* height:40rem; */
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 800px) {
+  #carousel-section .slide-image {
+    width: 90%;
+  }
+  #carousel-section {
+    padding: 2.5%;
+  }
+}
+.slogan{
+  font-family: "ubuntu";
+  font-weight: 300;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 0 0 10px black;
+}
+
+
+.Copyright1{
+  color:grey;
+  margin-top:60px;
+}
+
+
+
+/* _____________________________________________END_______________________________________________________ */
